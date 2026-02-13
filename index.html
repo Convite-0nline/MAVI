@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta property="og:title" content="Mavi">
+<meta property="og:description" content="Tenho um Convite muito especial para você!">
+<meta property="og:image" content="https://kassiocosta.github.io/mavi/img/envelope.png">
+<meta property="og:url" content="https://kassiocosta.github.io/mavi/">
+<meta property="og:type" content="website">
+
+
+
+    <title>Mavi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="carregar" id="carregar">
+        <img src="img/mavi.png" class="img-inicio">
+    </div>
+
+<div class="corpo" style="overflow-x: hidden;" id="corpo">
+    <div id="inicio" class="inicio" style="overflow-x: hidden;">
+        <p style="background-color: rgba(255, 255, 255, 0.725); width: 150px; padding: 5px; text-align: center; border-radius: 5px; animation: sugir3 5s forwards; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.557); left: 50%;transform: translate(-50%) ; position: absolute; top: 30px;">Olá, aguardo a Confirmação até o dia 17/02/2026</p>
+        <img src="img/arco-iris.png" class="arco">
+        <img src="img/arvore-left.png" class="position arvore">
+        <img src="img/arvore-rigth.png" class="position arvore2">
+        <img src="img/castelo.png" class="position castelo">
+        <img src="img/nuvem 2.png" class="nuvem1">
+        <img src="img/nuvem 2.png" class="nuvem2">
+        <img src="img/nuvem 2.png" class="nuvem3">
+           
+
+        <div style="z-index: 99; position: absolute; top: 200px; width: 100%; height: 230px;">
+
+            <img src="img/envelope.png" class="envelope">
+            <button id="botao">Abrir</button>
+        </div>
+
+    </div>
+    <div class="meio" id="meio">
+        <div class="video">
+            <video src="media/video.mp4" playsinline webkit-playsinline id="video"></video>
+            
+            
+        </div>
+        <div class="informacoes" style="z-index: 99;">
+            <div style="width: 100%;; position: absolute; top: 70px; display: flex; justify-content: center; z-index: 999;">
+                <p style="text-align: center; color: rgb(255, 255, 0); " class="text-sombra">O Reino encantado está em festa <br>para comemorar o aniversário da <br>mais linda princesa! </p>
+                <div style="position: absolute; top: 70px; display: flex; gap: 10px;">
+                    <p> <span class="informacoes-cima">Domingo</span> <br><span class="informacoes-baixo">08 de março</span></p>
+
+                    <img src="img/d894d8bf43e804b188a99f1d1894a4cf.png" style="width: 30px; z-index: 99;">
+
+                     <p> <span class="informacoes-cima">Horario</span> <br><span class="informacoes-baixo">18:00hrs</span></p>
+                </div>
+                <p style="position: absolute; top: 140px; z-index: 99;"><span style="color:  rgb(138, 4, 145);">Local</span> &#x1F3E0;:<span style="color: rgb(255, 255, 0);" class="text-sombra"> Rua 7 de Setembro</span> <br>
+                <span style="color:  rgb(138, 4, 145);"> (no Sintrasep)</span> </p>
+                <button style="position: absolute; top: 180px; z-index: 99; padding: 5px; border-radius: 5px; " id="confirmarPresenca">Confirmar <br> Presença</button>
+                
+            </div>
+             <img src="img/arvore-left.png" class="position arvore"  style="bottom: 15px;">
+        <img src="img/arvore-rigth.png" class="position arvore2" style="bottom: 15px;">
+             <img src="img/nuvem 2.png" class="nuvem1" style="opacity: 0.5;">
+        
+            <img src="img/rosas.png" style="position: absolute; top: -55px; width: 380px; left: 50%; transform: translate(-50%);">
+            <img src="img/mavi.png" style="width: 250px;top:-50px; position: absolute; left: 50%;transform: translate(-50%);" >
+            <img src="img/arco-iris.png" class="arco">
+            <img src="img/castelo.png" class="position castelo">
+
+
+
+            <img src="img/bela.png" class="princesa position bela">
+            <img src="img/loira1.png" class="princesa position loira">
+            <img src="img/cindelera.png" class="princesa position cindelera">
+            <img src="img/branca-de-veve.png" class="princesa position branca">
+            <img src="img/rapuzel.png" class="princesa position rapuzel">
+            
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<script>
+   
+   
+const inicio = document.querySelector('#inicio');
+   const botao = document.querySelector('#botao');
+   const video = document.querySelector('#video');
+   const carregar = document.querySelector('#carregar');
+    const corpo = document.querySelector('#corpo');
+    const convite = document.querySelector('#meio');
+   
+   
+    window.addEventListener('load', () => {
+        const img = document.querySelector('.img-inicio')
+            setTimeout(()=>{
+                img.classList.add('carregar-img')
+                setTimeout(()=>{
+                    corpo.style.display = "block"
+                    carregar.style.display = "none"
+                },1000)
+            
+            
+            },1000)
+
+    })
+
+        botao.addEventListener('click', () => {
+            convite.style.display = "flex"
+            inicio.style.display = "none"
+           // video.play()
+
+        })
+        const confirm = document.querySelector('#confirmarPresenca')
+
+        confirm.addEventListener('click', () => {
+             const tel = "5598985482327"
+        const msg = "Olá!\u{1F44B}\nGostaria de Confirmar minha presença no aniversário da princesa Mavi!\u{1F451} \nEstarei presente no dia 08 de março às 18h\nMuito obrigado pelo convite!\u{1F496} \n\n\n(Gostaria de saber quantas Crianças e adulto Vão estar presente)\nQuantas pessoas são?\nR: "
+
+        window.open(`https://wa.me/${tel}?text=${encodeURIComponent(msg)}`) 
+        })
+       
+
+        
+
+    
+
+    
+</script>
+    
+</body>
+</html>
